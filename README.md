@@ -63,6 +63,6 @@ This project is open-source and free to use.
 
 ---
 
-Created by Deborah  
+Created by https://github.com/Deborah1-12 
 Feel free to customize and expand this project for your travel website needs!
 
