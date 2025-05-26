@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="queries.css">
+  <script src="https://kit.fontawesome.com/49985d21bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="header">
+    <h2>Travel</h2>
+    <div class="container">
+      <div class="menu">
+        <div id="hamburger">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <button class="book-btn-alt">Book Now</button>
+      </div>
+      <nav>
+        <ul id="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#">Contact</a></li>
+          <button class="book-btn">Book Now</button>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="home">
+      <!-- Videos -->
+      <video class="video-slide active" src="/Assets/beach2.mp4" autoplay muted loop data-title="Wonderful Island" data-description="Experience the tranquil beauty of our beach destinations." data-button-text="Discover More"></video>
+      <video class="video-slide" src="/Assets/hike.mp4" autoplay muted loop data-title="Mountain Adventures" data-description="Trek through scenic mountain ranges and challenge yourself." data-button-text="Explore the Peaks"></video>
+      <video class="video-slide" src="/Assets/roadtrip.mp4" autoplay muted loop data-title="Road Trip" data-description="Embark on a road trip with endless possibilities and adventure." data-button-text="Start Journey"></video>
+      <video class="video-slide" src="/Assets/snow ride.mp4" autoplay muted loop data-title="Winter Wonderland" data-description="Embrace the chill with thrilling winter activities." data-button-text="Feel the Chill"></video>
+      <video class="video-slide" src="/Assets/waterfall.mp4" autoplay muted loop data-title="Waterfalls" data-description="Get lost in the serenity of cascading waterfalls." data-button-text="Chase Waterfalls"></video>
+
+      <!-- Content -->
+      <div class="content">
+        <h1 id="video-title">Wonderful <br><span>Island</span></h1>
+        <p id="video-description">Experience the tranquil beauty of our beach destinations.</p>
+        <button><a href="#" id="button-text">Discover More</a></button>
+      </div>
+
+      <!-- Socials -->
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+
+      <!-- Slider nav -->
+      <div class="slider-nav">
+        <div class="nav-btn active-btn" data-index="0"></div>
+        <div class="nav-btn" data-index="1"></div>
+        <div class="nav-btn" data-index="2"></div>
+        <div class="nav-btn" data-index="3"></div>
+        <div class="nav-btn" data-index="4"></div>
+      </div>
+    </section>
+
+    <!-- adventure search -->
+    <section class="adventure-search">
+      <div class="adventure" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+        <h2>Find Your Next Adventure</h2>
+        <form action="">
+          <input type="text" placeholder="Where To">
+          
+          <input type="text" placeholder="Date">
+          
+          <input type="text" placeholder="Travelers">
+          
+          <button id="search">Search</button>
+          
+        </form>
+      </div>
+    </section>
+
+    <!-- destinations -->
+    <section id="destinations">
+      <div class="destination-heading">
+        <div class="destination-title">
+          <h1 data-aos="fade-down" data-aos-duration="1000">Featured Destinations</h1>
+          <p data-aos="fade" data-aos-duration="1000">Explore our handpicked destinations around the world</p>
+        </div>
+        <div data-aos="fade" data-aos-duration="1000" data-aos-delay="200">
+          <p class="blue">View all destinations <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+      </div>
+
+      <div class="destination-cards">
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="card-image">
+            <img src="/Assets/bali,indonesia.avif" alt="Bali,Indonesia">
+          </div>
+          <div class="card-text">
+            <span>
+              <h3>Bali,Indonesia</h3>
+              <p>$899</p>
+            </span>
+            <p>Explore the beaches, temples and lush landscapes of Bali</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      
+
+      
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="card-image">
+            <img src="/Assets/santorini.avif" alt="Santorini, Greece">
+          </div>
+          <div class="card-text">
+            <span>
+              <h3>Santorini,Greece</h3>
+              <p>$1,299</p>
+            </span>
+            <p>Experience the iconic white buildings and stunning sunsets</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      
+
+
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="card-image">
+            <img src="/Assets/kyoto.avif" alt="Kyoto,Japan">
+          </div>
+          <div class="card-text">
+            <span>
+              <h3>Kyoto,Japan</h3>
+              <p>$1,199</p>
+            </span>
+            <p>Discover ancient temples, gardens and traditional culture.</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+          <div class="card-image">
+            <img src="/Assets/machu.avif" alt="Machu Picchu,Peru">
+          </div>
+          <div class="card-text">
+            <span>
+              <h3>Machu Picchu,Peru</h3>
+              <p>$1,499</p>
+            </span>
+            <p>Visit the ancient Incan citadel set high in the Andes Mountains</p>
+            <button class="explore-btn">Explore</button>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="packages-container">
+      <section id="packages">
+        <div class="packages-heading">
+           <h1 data-aos="fade" data-aos-duration="1000">Total Travel Packages</h1>
+           <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">All-inclusive packages with flights, accommodations, and experiences</p>
+        </div>
+   
+        <div class="packages-cards">
+          <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <div class="card-image">
+              <img src="/Assets/europe.avif" alt="Europe">
+            </div>
+            <div class="card-text">
+              <h3>European Adventure</h3>
+              <div class="time-flex">
+                <p><i class="fa-regular fa-clock"></i> 10 days</p>
+                <p><i class="fa-regular fa-star"></i> 4.8</p>
+               </div>
+               <p><i class="fa-solid fa-location-dot"></i> Paris • Rome • Barcelona</p>
+               <div id="flex">
+                 <p><span id="price">$2,499</span><span id="discount">$2,999</span></p>
+                 <button class="details">View Details</button>
+               </div>
+             </div>
+           </div>
+   
+           <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+             <div class="card-image">
+               <img src="/Assets/asia.avif" alt="Europe">
+             </div>
+             <div class="card-text">
+               <h3>Asian Discovery</h3>
+               <div class="time-flex">
+                   <p><i class="fa-regular fa-clock"></i> 14 days</p>
+                   <p><i class="fa-regular fa-star"></i> 4.9</p>
+               </div>
+               <p><i class="fa-solid fa-location-dot"></i> Tokyo • Seoul • Bangkok</p>
+               <div id="flex">
+                 <p><span id="price">$3,299</span><span id="discount">$3,799</span></p>
+                 <button class="details">View Details</button>
+               </div>
+             </div>
+           </div>
+   
+           <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+             <div class="card-image">
+               <img src="/Assets/carribean.avif" alt="Europe">
+             </div>
+             <div class="card-text">
+               <h3>European Adventure</h3>
+               <div class="time-flex">
+                   <p><i class="fa-regular fa-clock"></i> 7 days</p>
+                   <p><i class="fa-regular fa-star"></i> 4.7</p>
+               </div>
+               <p><i class="fa-solid fa-location-dot"></i> Jamaica • Bahamas  • Dominican Republic</p>
+               <div id="flex">
+                 <p><span id="price">$1,899</span><span id="discount">$2,199</span></p>
+                 <button class="details">View Details</button>
+               </div>
+             </div>
+           </div>
+         </div>
+         
+        <div class="button-div" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" ><button class="view-all">View All Packages</button></div>
+      </section>
+    </section>
+
+    <section class="testimonials">
+      <div class="testimonials-heading">
+        <h1 data-aos="fade" data-aos-duration="1000">What Our Travelers Say</h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Real experiences from our satisfied customers</p>
+      </div>
+
+      <div class="testimonials-cards">
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="image-name">
+            <img src="/Assets/sarahj.avif" alt="Sarah Johnson">
+            <div class="name">
+              <h4>Sarah Johnson</h4>
+              <p>New York, USA</p>
+            </div>
+          </div>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Our trip to Japan was flawlessly organized. The accommodations were perfect, and the guided tours gave us insights we would have never discovered on our own. Highly recommend!"</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="image-name">
+            <img src="/Assets/michChen.avif" alt="Micheal Chen">
+            <div class="name">
+              <h4>Micheal Chen</h4>
+              <p>Toronto, Canada</p>
+            </div>
+          </div>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>"The European Adventure package exceeded all our expectations. Every detail was taken care of, and we could just focus on enjoying our honeymoon. The memories will last a lifetime!"</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <div class="image-name" >
+            <img src="/Assets/EmilyR.avif" alt="Emily Rodriguez">
+            <div class="name">
+              <h4>Emily Rodriguez</h4>
+              <p>London, UK</p>
+            </div>
+          </div>
+          <div class="star-icons">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>"The Caribbean cruise was an amazing experience for our family. The kids loved the activities, and we appreciated how smooth everything went from booking to the return flight."</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-aos="zoom-in" data-aos-duration="1000">
+    <section class="footer-top">
+      <div class="footer-logo">
+      <h1>Travel</h1>
+      <p>Making travel accessible, affordable, and enjoyable for everyone around the world</p>
+      <div class="socials-footer">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
+    </div>
+
+    <div class="quick-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Travel Packages</a></li>
+        <li><a href="#">Travel Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </div>
+
+    <div class="support">
+      <h2>Support Us</h2>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+        <li><a href="#">Payment Methods</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i> Uyo, Nigeria</li>
+        <li><i class="fa-solid fa-phone"></i> +234 000 000 0000</li>
+        <li><i class="fa-solid fa-envelope"></i> info@travel.com</li>
+      </ul>
+    </div>
+    </section>
+    <section class="footer-bottom">
+      <p>© <span id="date-display"></span> Travel. All rights reserved.</p>
+    </section>
+  </footer>
+
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="app.js"></script>
+  <script>
+    AOS.init()
+  </script>
+</body>
+</html>
